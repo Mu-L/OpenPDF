@@ -9,18 +9,21 @@ and bugreports to this GitHub repository.
 ![CI](https://github.com/LibrePDF/OpenPDF/actions/workflows/maven.yml/badge.svg)
 [![License (LGPL version 2.1)](https://img.shields.io/badge/license-GNU%20LGPL%20version%202.1-blue.svg?style=flat-square)](http://opensource.org/licenses/LGPL-2.1)
 [![License (MPL)](https://img.shields.io/badge/license-Mozilla%20Public%20License-yellow.svg?style=flat-square)](http://opensource.org/licenses/MPL-2.0)
-
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/791d40a437f64c77a0a802ae597a960c)](https://app.codacy.com/gh/LibrePDF/OpenPDF/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
 [![Codacy Badge](https://app.codacy.com/project/badge/Coverage/791d40a437f64c77a0a802ae597a960c)](https://app.codacy.com/gh/LibrePDF/OpenPDF/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_coverage)
 [![CodeQL](https://github.com/LibrePDF/OpenPDF/actions/workflows/codeql.yml/badge.svg)](https://github.com/LibrePDF/OpenPDF/actions/workflows/codeql.yml)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=LibrePDF_OpenPDF&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=LibrePDF_OpenPDF)
 [![CodeFactor](https://www.codefactor.io/repository/github/librepdf/openpdf/badge)](https://www.codefactor.io/repository/github/librepdf/openpdf)
-
 [![Join the chat at https://gitter.im/LibrePDF/OpenPDF](https://badges.gitter.im/LibrePDF/OpenPDF.svg)](https://gitter.im/LibrePDF/OpenPDF)
+![Java 17](https://img.shields.io/badge/Java-17-green?logo=java&logoColor=white)
+![Java 21](https://img.shields.io/badge/Java-21-blue?logo=java&logoColor=white)
+[![Kotlin](https://img.shields.io/badge/Kotlin-Supported-7F52FF?logo=kotlin&logoColor=white)](https://github.com/LibrePDF/OpenPDF/tree/master/openpdf-kotlin)
 
-## OpenPDF version 2.0.3 released 2024-08-07
 
-Get version 2.0.3 here: https://github.com/LibrePDF/OpenPDF/releases/tag/2.0.3
+
+## OpenPDF version 2.0.5 released 2025-05-26
+
+Get version 2.0.5 here: https://github.com/LibrePDF/OpenPDF/releases/tag/2.0.5
 
 Please note: Repositories like Maven Central and others may take a few days to update.
 
@@ -53,7 +56,7 @@ Add this to your pom.xml file to use the latest version of OpenPDF:
 <dependency>
   <groupId>com.github.librepdf</groupId>
   <artifactId>openpdf</artifactId>
-  <version>2.0.3</version>
+  <version>2.0.5</version>
 </dependency>
 ```
 
@@ -104,15 +107,11 @@ OpenPDF ancestors in GitHub (in fork order):
 4. [@ymasory](https://github.com/ymasory) / [iText-4.2.0](https://github.com/ymasory/iText-4.2.0) -
    original parent on GitHub
 
-## Projects using OpenPDF
 
-- [Spring Framework](https://github.com/spring-projects/spring-framework)
-- [flyingsaucer](https://github.com/flyingsaucerproject/flyingsaucer)
-- [Digital Signature Service](https://github.com/esig/dss)
-- Confluence PDF Export
-- OpenCMS, Nuxeo Web Framework, QR Invoice Library and many closed source commercial applications as
-  well.
-- Full list here: [Artifacts using OpenPDF](https://mvnrepository.com/artifact/com.github.librepdf/openpdf/usages)
+## Security Notice
+
+It is the responsibility of the application developer to ensure that all input passed into OpenPDF is trusted, sanitized, and safe.
+OpenPDF does not perform input validation or enforce sandboxing. For important security guidelines and common risks, please read our [Security Policy](Security.md).
 
 ## Android
 
@@ -143,13 +142,12 @@ More details: [Contributing](CONTRIBUTING.md)
 
 We have now different versions of OpenPDF, and they require different versions of Java:
 
+- The 2.1.x Branch requires Java 21 or later.
 - The 2.0.x Branch requires Java 17 or later.
 - The 1.4.x Branch requires Java 11 or later.
 - The 1.3.x Branch requires Java 8 or later.
-- Some versions of 1.3 where release with Java 11 as minimum requirement, but we have reverted this
-  to Java 8 as minimum requirement.
-- OpenPDF versions 2.0.x: We are working on modernizing the OpenPDF library for Java
-  17+.
+
+The upcoming 2.1.0 version of OpenPDF will require Java 21 or later, possibly to be released in circa year 2026.
 
 ### UTF-8 Fonts
 
